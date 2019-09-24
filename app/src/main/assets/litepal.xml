@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="SQLiteTest"></dbname>
+    <version value="4"></version>
+    <list>
+        <mapping class="com.example.sqlitetest.bean.User"></mapping>
+        <mapping class="com.example.sqlitetest.bean.DebtApply"></mapping>
+    </list>
+
+</litepal>

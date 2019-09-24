@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_rect"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/layout_debtqueryitemTvamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="￥5000000"
+                android:textColor="#F30F0F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/layout_debtqueryitemTvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="张三"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/layout_debtqueryitemTvdate"
+                app:layout_constraintTop_toBottomOf="@+id/layout_debtqueryitemTvdate" />
+
+            <TextView
+                android:id="@+id/layout_debtqueryitemTvoperateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="2019-08-02 21:34"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_debtqueryitemTvName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_debtqueryitemTvName" />
+
+            <TextView
+                android:id="@+id/layout_debtqueryitemTvboundInstituation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="中国银行"
+                app:layout_constraintStart_toStartOf="@+id/layout_debtqueryitemTvamount"
+                app:layout_constraintTop_toBottomOf="@+id/layout_debtqueryitemTvamount" />
+
+            <TextView
+                android:id="@+id/layout_debtqueryitemTvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2019.06.05 - 2020.02.12"
+                app:layout_constraintStart_toStartOf="@+id/layout_debtqueryitemTvboundInstituation"
+                app:layout_constraintTop_toBottomOf="@+id/layout_debtqueryitemTvboundInstituation" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

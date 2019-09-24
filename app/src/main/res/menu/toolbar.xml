@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="关于"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/ic_exit"
+        android:title="退出"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/query"
+        android:icon="@drawable/ic_query"
+        android:title="查询"
+        app:showAsAction="always" />
+</menu>
